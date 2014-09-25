@@ -1,0 +1,18 @@
+module EventHub
+
+  module <%= processor_module_name %>
+
+    class <%= processor_class_name %> < EventHub::Processor
+
+      def handle_message(message)
+        # do your message processing here
+
+        # return a message if applicable
+        return message.copy
+      end
+
+    end
+
+  end
+
+end
