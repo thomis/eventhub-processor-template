@@ -3,18 +3,18 @@ require_relative 'lib/base.rb'
 module EventHub
 
   # argument parsing
-  @options = EventHub::ArgumentParser.parse(ARGV)
+  @options = ::EventHub::ArgumentParser.parse(ARGV)
 
   # create instance of processor
-  @processor = EventHub::<%= processor_module_name %>::<%= processor_class_name %>.new
+  @processor = ::EventHub::<%= processor_module_name %>::<%= processor_class_name %>.new
 
   # define logging facilities
   def self.logger
     @logger ||= begin
-      multi = EventHub::Components::MultiLogger.new
+      multi = ::EventHub::Components::MultiLogger.new
       multi.add_device(Logger.new(STDOUT))
       multi.add_device(LogStashLogger.new(type: :udp, host: 'localhost', port: 6000))
-      EventHub::Components::StructuredDataLogger.new(multi, 'app_name' => File.basename(__FILE__, '.*'), 'env' => @options.environment)
+      ::EventHub::Components::StructuredDataLogger.new(multi, 'app_name' => File.basename(__FILE__, '.*'), 'env' => @options.environment)
     end
   end
 
