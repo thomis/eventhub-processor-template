@@ -15,6 +15,7 @@ module EventHub
       multi.add_device(Logger.new(STDOUT))
       multi.add_device(LogStashLogger.new(type: :udp, host: 'localhost', port: 6000))
       ::EventHub::Components::StructuredDataLogger.new(multi, 'app_name' => File.basename(__FILE__, '.*'), 'env' => @options.environment)
+      multi
     end
   end
 
