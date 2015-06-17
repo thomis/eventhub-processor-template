@@ -8,13 +8,16 @@ module EventHub
   # create instance of processor
   @processor = ::EventHub::<%= processor_module_name %>::<%= processor_class_name %>.new
 
+  def self.processor_name
+    @processor.name
+  end
+
   # define logging facilities
   def self.logger
     @logger ||= begin
       multi = ::EventHub::Components::MultiLogger.new
-      multi.add_device(Logger.new(STDOUT))
-      multi.add_device(LogStashLogger.new(type: :udp, host: 'localhost', port: 6000))
-      ::EventHub::Components::StructuredDataLogger.new(multi, 'app_name' => File.basename(__FILE__, '.*'), 'env' => @options.environment)
+      multi.add_device(EventHub::Components::Logger.stdout)
+      multi.add_device(EventHub::Components::Logger.logstash(processor_name, @options.environment))
       multi
     end
   end
