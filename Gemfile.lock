@@ -11,7 +11,7 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     eventhub-components (0.3.1)
       logstash-logger (~> 0.26)
-    eventhub-processor (0.6.6)
+    eventhub-processor (0.7.1)
       amqp (>= 1.6.0)
       eventhub-components (>= 0.1.8)
       rest-client (>= 2.0.0)
@@ -84,7 +84,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  eventhub-processor (~> 0.6.5)
+  eventhub-processor (~> 0.7.1)
   logstash-logger (~> 0.26)
   rake (~> 13.0)
   rspec (~> 3.12)

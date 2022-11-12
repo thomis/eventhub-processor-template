@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "eventhub-processor", "~> 0.6.5"
+gem "eventhub-processor", "~> 0.7.1"
 gem "logstash-logger", "~> 0.26"
 
 group :development do
