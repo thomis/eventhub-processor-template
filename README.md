@@ -1,3 +1,5 @@
+[![ci](https://github.com/thomis/eventhub-processor-template/actions/workflows/ci.yml/badge.svg)](https://github.com/thomis/eventhub-processor-template/actions/workflows/ci.yml)
+
 eventhub-processor-template
 ===========================
 
