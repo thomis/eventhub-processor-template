@@ -37,7 +37,7 @@ GEM
       racc
     racc (1.7.1)
     rainbow (3.1.1)
-    rake (13.0.6)
+    rake (13.1.0)
     regexp_parser (2.8.2)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
@@ -70,7 +70,7 @@ GEM
       rubocop-ast (>= 1.28.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
-    rubocop-ast (1.29.0)
+    rubocop-ast (1.30.0)
       parser (>= 3.2.1.0)
     rubocop-performance (1.19.1)
       rubocop (>= 1.7.0, < 2.0)
@@ -104,7 +104,7 @@ PLATFORMS
 DEPENDENCIES
   eventhub-processor (~> 0.6.6)
   logstash-logger (~> 0.26)
-  rake (~> 13.0)
+  rake (~> 13.1)
   rspec (~> 3.12)
   standard (~> 1.31)
 
