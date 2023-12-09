@@ -20,7 +20,7 @@ GEM
     http-accept (1.7.0)
     http-cookie (1.0.5)
       domain_name (~> 0.5)
-    json (2.6.3)
+    json (2.7.1)
     language_server-protocol (3.17.0.3)
     lint_roller (1.1.0)
     logstash-event (1.2.02)
@@ -37,7 +37,7 @@ GEM
     racc (1.7.3)
     rainbow (3.1.1)
     rake (13.1.0)
-    regexp_parser (2.8.2)
+    regexp_parser (2.8.3)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
@@ -74,7 +74,7 @@ GEM
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
     ruby-progressbar (1.13.0)
-    standard (1.32.0)
+    standard (1.32.1)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.0)
       rubocop (~> 1.57.2)
@@ -104,7 +104,7 @@ DEPENDENCIES
   logstash-logger (~> 0.26)
   rake (~> 13.1)
   rspec (~> 3.12)
-  standard (~> 1.31)
+  standard (~> 1.32)
 
 BUNDLED WITH
    2.4.14
