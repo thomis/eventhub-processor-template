@@ -1,5 +1,9 @@
 [![ci](https://github.com/thomis/eventhub-processor-template/actions/workflows/ci.yml/badge.svg)](https://github.com/thomis/eventhub-processor-template/actions/workflows/ci.yml)
 
+**Note**
+
+eventhub-processor-template has been retired and will not be further maintained.
+
 eventhub-processor-template
 ===========================
 
